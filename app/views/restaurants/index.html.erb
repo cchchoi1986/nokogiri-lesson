@@ -1,0 +1,20 @@
+<table>
+  <thead>
+    <tr>
+      <th>
+        Restaurant Name
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @restaurants.each do |restaurant| %>
+      <tr>
+        <td>
+          <%= link_to restaurant do %>
+            <%= restaurant.title %>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

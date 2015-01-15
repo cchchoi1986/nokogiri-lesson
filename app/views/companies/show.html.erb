@@ -1,0 +1,7 @@
+<h1>Company - <%= @company.name %></h1>
+<h1>Symbol - <%= @company.symbol %></h1>
+
+
+<% Annualincome.columns[4..52].each_with_index do |column, index| %>
+  <h2><%= column.name %>=<%= Annualincome.find(@company.id)["#{column.name}"] %></h2>
+<% end %>

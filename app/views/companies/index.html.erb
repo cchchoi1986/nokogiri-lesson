@@ -1,0 +1,18 @@
+<h2>hihi</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Symbol</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @companies.each do |company| %>
+      <tr>
+        <td><%= link_to company do %><%= company.name %><% end %></td>
+        <td><%= link_to company do %><%= company.symbol %><% end %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

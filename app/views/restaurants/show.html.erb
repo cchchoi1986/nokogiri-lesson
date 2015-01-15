@@ -1,0 +1,43 @@
+<div class="container-fluid">
+  <table class="row">
+    <tbody>
+      <tr>
+        <th class="col-xs-2 restauranthead">Title</th>
+        <td class="col-xs-8 restaurantbody"><%= @restaurant.title %></td>
+      </tr>
+      <tr>
+        <th class="col-xs-2 restauranthead">Address</th>
+        <td class="col-xs-8 restaurantbody"><%= @restaurant.address %></td>
+      </tr>
+      <tr>
+        <th class="col-xs-2 restauranthead">Phone Number</th>
+        <td class="col-xs-8 restaurantbody"><%= @restaurant.phonenumber %></td>
+      </tr>
+      <tr>
+        <th class="col-xs-2 restauranthead">Price Range</th>
+        <td class="col-xs-8 restaurantbody"><%= @restaurant.pricerange %></td>
+      </tr>
+      <tr>
+        <th class="col-xs-2 restauranthead">Tags</th>
+        <td class="col-xs-8 restaurantbody"><%= @restaurant.tags %></td>
+      </tr>
+      <tr>
+        <th class="col-xs-2 restauranthead">Accepted Payment</th>
+        <td class="col-xs-8 restaurantbody"><%= @restaurant.acceptedpayment %></td>
+      </tr>
+      <tr>
+        <th class="col-xs-2 restauranthead">Seating</th>
+        <td class="col-xs-8 restaurantbody"><%= @restaurant.seating %></td>
+      </tr>
+      <tr>
+        <th class="col-xs-2 restauranthead">Intro</th>
+        <td class="col-xs-8 restaurantbody"><%= @restaurant.intro %></td>
+      </tr>
+      <tr>
+        <th class="col-xs-2 restauranthead">Description</th> 
+        <td class="col-xs-8 restaurantbody"><%= @restaurant.description %></td>
+      </tr>
+    </tbody>
+  </table>
+  <%= button_to "BACK", :back, method: :get, class: "btn-primary btn restaurantbutton" %>
+</div>
